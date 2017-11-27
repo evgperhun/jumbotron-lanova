@@ -8,54 +8,122 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css">
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/index.css">
-    <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
-    <title>Document</title>
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/tooltip.css">
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+    integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+    crossorigin="anonymous">  
+    <title>Nails O'Lanova</title>
 </head>
-
 <body>
-    <main>
-        <nav>
-            <div class="header">
-                <div class="horiz-menu">
-                    <a href="#" class="btn">Головна</a>
-                    <a href="#" class="btn">Новини</a>
-                    <a href="#" class="btn">Блог</a>
-                    <a href="#" class="btn">Навчання</a>
-                    <a href="#" class="btn">Контакти</a>
-                </div>
-            </div>
-        </nav>
-
-        <div class="background-wrap">
-            <video id="video-bg-elem" preload="auto" poster="" autoplay="true" loop muted>
-              <source src="video/intro-video.mp4" type ="video/mp4">
-              Video not supported
-         </video>
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <li><a class="active button" href="#">Головна</a></li>
+                <li><a class="smooth button" href="#news">Новини</a></li>
+                <li><a class="smooth button" href="#portfolio">Портофоліо</a></li>
+                <li><a class="smooth button" href="#blog">Блог</a></li>
+                <li><a class="smooth button" href="#study">Навчання</a></li>
+                <li><a class="smooth button" href="#contact">Контакти</a></li>
+            </ul>
         </div>
-        <div class="content">
-            <h1>Студія ольги Ланової</h1>
-            <p>Майстерня твоєї краси</p>
+    </div>
+    <header class="v-header container">
+        <div class="fullscreen-video-wrap">
+            <video src="video/intro.mp4" autoplay loop muted></video>
         </div>
-
-        <footer>
-            <div class="container">
-                <a class="footer_link" href="https://www.facebook.com/evgperhun" target="_blank">
-                        <i class="fa fa-facebook-square"></i></a>
-                <a class="footer_link" href="https://twitter.com/evgperhun" target="_blank">
-                        <i class="fa fa-twitter-square"></i></a>
-                <a class="footer_link" href="https://www.linkedin.com/in/eugeneperkhun" target="_blank">
-                        <i class="fa fa-linkedin-square"></i></a>
-                <a class="footer_link" href="https://github.com/evgperhun" target="_blank">
-                        <i class="fa fa-github-square"></i></a>
-                <div>
-                    <div id="footer"></div>
-                </div>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <h1>СТУДІЯ ОЛЬГИ ЛАНОВОЇ</h1>
+            <p class="slogan">Майстерня твоєї краси</p>
+            <p>Раді вітати вас у нас на сторіночці, ми докладємо усіх зусиль для того щоб Вам у нас сподобалось і ви виглядали
+                довершено.</p>
+            <a href="#news" class="btn smooth">Продовжити</a>
+        </div>
+    </header>
+    <section class="section section-a">
+        <div class="container">
+            <h1 id="news">Новини</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias est fuga distinctio velit, aperiam, quia consectetur
+                quasi rem eum illo nihil illum commodi similique perspiciatis quae, esse nemo! Ipsum, accusamus.
+            </p>
+        </div>
+    </section>
+    <hr>
+    <section class="section section-a">
+        <div class="container">
+            <h1 id="portfolio">Портофоліо</h1>
+            <div class="carousel">
+                <img class="portofolio" src="img/a.jpg" alt="manicure">
+                <img class="portofolio" src="img/aa.jpg" alt="manicure">
+                <img class="portofolio" src="img/aaa.jpg" alt="manicure">
+                <img class="portofolio" src="img/aaaa.jpg" alt="manicure">
+                <img class="portofolio" src="img/aaaaa.jpg" alt="manicure">
             </div>
-        </footer>
-    </main>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        </div>
+    </section>
+    <hr>
+    <section class="section section-a">
+        <div class="container">
+            <h1 id="blog">Блог</h1>
+            <div class="card">
+                <div class="thumbnail">
+                    <img class="left" src="https://cdn2.hubspot.net/hubfs/322787/Mychefcom/images/BLOG/Header-Blog/photo-culinaire-pexels.jpg" alt="photo product whith magnezia"/>
+                </div>
+                <div class="right">
+                    <h3>Чому потрібно щодня більше споживати Магнезії</h3>
+                    <div class="author">
+                        <img src="https://randomuser.me/api/portraits/men/95.jpg" alt="photo Lanova Olga" />
+                        <h4>Оля Ланова</h4>
+                    </div>
+                    <div class="separator"></div>
+                    <p class="article">Магній - це один з шести основних макромінералів, необхідних організму для виробництва енергії та синтезу
+                        білка та ферментів.</p>
+                </div>
+                <h5>25</h5>
+                <h6>Листопада</h6>
+                <ul>
+                    <li>
+                        <i class="fa fa-eye fa-2x"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-heart-o fa-2x"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope-o fa-2x"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-share-alt fa-2x"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="section section-a">
+        <div class="container">
+            <h1 id="study">Навчання</h1>
+            <p>Заповнити
+                <span class="tool" data-tool="Тут знаходиться анкета" tabindex="1"> анкету</span> можна тут</p>
+        </div>
+    </section>
+    <section class="section section-c">
+        <div class="container">
+            <h1 id="contact">Контакти</h1>
+            <p class="adress">м. Червоноград, вул. Шептицього 18
+                <br> <a href="tel:+380737732155">тел: +38(073)77-321-55</a></p>
+                <h1 class="animated infinite bounce">Example</h1>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/index.js"></script>
+    <script type="text/javascript" src="js/smooth-scrool.js"></script>
 </body>
 
 </html>
+
